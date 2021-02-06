@@ -41,7 +41,6 @@ public class ClientService {
 		entity = repository.save(entity);
 		return new ClientDTO(entity);
 	}
-<<<<<<< HEAD
 
 	@Transactional
 	public ClientDTO update(Long id, ClientDTO dto) {
@@ -55,9 +54,6 @@ public class ClientService {
 		}
 	}
 
-=======
-	
->>>>>>> 8b11ab9ac63cd3777962eb32c32ac92033aaaa6a
 	private void copyDtoToEntity(ClientDTO dto, Client entity) {
 		entity.setName(dto.getName());
 		entity.setCpf(dto.getCpf());
